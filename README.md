@@ -46,7 +46,7 @@ This portfolio is deployed on Vercel. To deploy your own version:
 ## 📬 Contact
 Feel free to reach out!
 - **Email:** johnandrewborabo44@gmail.com
-- **Portfolio:** [Facebook Profile](http://facebook.com)
+- **Portfolio:** [LulliDev](https://lulli-dev.vercel.app)
 - **GitHub:** [lulli30](https://github.com/lulli30)
 
 ---
