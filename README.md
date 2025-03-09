@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 # LulliDev Personal Portfolio
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a Full-Stack Developer. Built using modern web technologies, this portfolio highlights my expertise in AI, Machine Learning, and Software Engineering.
 
 ## 🛠 Tech Stack
 - **Frontend:** Next.js, React, Tailwind CSS
-<<<<<<< HEAD
 - **Backend:** Node.js, Firebase Firestore
 - **Backend:** Node.js
 - **Deployment:** Vercel
