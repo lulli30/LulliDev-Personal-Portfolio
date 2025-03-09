@@ -165,7 +165,7 @@ const About = () => {
               animate="show"
               exit="hidden"
             >
-              Hi, I'm{" "}
+              Hi, Im{" "}
               <span className="text-gradient bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
                 Andrew
               </span>
@@ -218,10 +218,11 @@ const About = () => {
               exit="hidden"
               className="md:flex gap-4 mb-2 mt-2 "
             >
-              <Link href="/contact" passHref>
-                <a className="px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-teal-500/20 transition-all">
-                  Contact Me
-                </a>
+              <Link
+                href="/contact"
+                className="px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-teal-500/20 transition-all"
+              >
+                Contact Me
               </Link>
               <a
                 href="#download"
