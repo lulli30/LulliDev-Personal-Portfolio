@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a0d42ef (updated readme file)
 # LulliDev Personal Portfolio
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a Full-Stack Developer. Built using modern web technologies, this portfolio highlights my expertise in AI, Machine Learning, and Software Engineering.
@@ -10,9 +7,7 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 - **Frontend:** Next.js, React, Tailwind CSS
 <<<<<<< HEAD
 - **Backend:** Node.js, Firebase Firestore
-=======
 - **Backend:** Node.js
->>>>>>> a0d42ef (updated readme file)
 - **Deployment:** Vercel
 
 ## 🚀 Features
@@ -58,8 +53,3 @@ Feel free to reach out!
 
 ---
 Made with ❤️ by **Andrew**
-<<<<<<< HEAD
-=======
->>>>>>> 4a46255 (Initial commit - LulliDev Portfolio)
-=======
->>>>>>> a0d42ef (updated readme file)
