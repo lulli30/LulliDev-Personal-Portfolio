@@ -65,14 +65,14 @@ const Contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="min-h-screen bg-gradient-to-b from-gray-950 to-teal-950/30 text-gray-100 flex items-center">
-        <div className="container mx-auto px-4 py-20 md:py-28 lg:py-36 flex items-center justify-center">
+        <div className="container mx-auto px-4 py-24 md:py-32 lg:py-40 flex items-center justify-center">
           {/* Contact Form Container */}
           <motion.div
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full max-w-[700px] bg-gradient-to-br from-teal-950 to-slate-950 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-700/50 p-6 md:p-10 relative overflow-hidden"
+            className="mt-20 flex flex-col w-full max-w-[700px] bg-gradient-to-br from-teal-950 to-slate-950 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-700/50 p-6 md:p-10 relative overflow-hidden"
           >
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-40 h-40 bg-teal-500/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-2xl"></div>
