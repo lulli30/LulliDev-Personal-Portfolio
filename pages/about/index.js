@@ -324,8 +324,8 @@ const About = () => {
                           <div className="p-3 bg-gray-800/60 rounded-lg border border-gray-700/40 transition-all duration-300 group-hover:border-teal-500/50 group-hover:bg-gray-800/90">
                             <Icon className="text-2xl text-teal-400 lg:text-3xl" />
                           </div>
-                          <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:-bottom-6 px-2 py-1 text-xs font-medium text-white bg-gray-800 rounded transition-all duration-300">
-                            {Icon.name.replace("Fa", "").replace("Si", "")}
+                          <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:-bottom-6 px-2 py-1 text-xs font-medium text-white bg-gray-800 rounded transition-all duration-300 whitespace-nowrap z-50">
+                            {name}
                           </span>
                         </div>
                       ))}
