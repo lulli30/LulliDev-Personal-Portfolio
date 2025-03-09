@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LulliDev Personal Portfolio
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a Full-Stack Developer. Built using modern web technologies, this portfolio highlights my expertise in AI, Machine Learning, and Software Engineering.
@@ -50,3 +51,5 @@ Feel free to reach out!
 
 ---
 Made with ❤️ by **Andrew**
+=======
+>>>>>>> 4a46255 (Initial commit - LulliDev Portfolio)
