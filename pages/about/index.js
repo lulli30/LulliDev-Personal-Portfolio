@@ -28,6 +28,7 @@ import {
   SiNumpy,
   SiPandas,
   SiNltk,
+  SiMysql,
 } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -43,33 +44,44 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+          { icon: FaHtml5, name: "HTML5" },
+          { icon: FaCss3, name: "CSS3" },
+          { icon: FaJs, name: "JavaScript" },
+          { icon: FaReact, name: "React" },
+          { icon: SiNextdotjs, name: "Next.js" },
+          { icon: SiFramer, name: "Framer" },
+          { icon: FaWordpress, name: "Wordpress" },
         ],
       },
       {
         title: "Backend Development",
-        icons: [FaNodeJs, FaJava, FaPython, SiNestjs, SiMongodb, SiFirebase],
+        icons: [
+          { icon: FaNodeJs, name: "Node.js" },
+          { icon: SiNestjs, name: "Nest.js" },
+          { icon: SiMongodb, name: "MongoDB" },
+          { icon: SiFirebase, name: "Firebase" },
+          { icon: SiMysql, name: "MySQL" },
+        ],
       },
       {
         title: "Machine Learning",
         icons: [
-          SiTensorflow,
-          SiPytorch,
-          SiScikitlearn,
-          SiSpacy,
-          SiPandas,
-          SiNumpy,
+          { icon: FaPython, name: "Python" },
+          { icon: SiTensorflow, name: "Tensorflow" },
+          { icon: SiPytorch, name: "Pytorch" },
+          { icon: SiScikitlearn, name: "Scikit-learn" },
+          { icon: SiSpacy, name: "Spacy" },
+          { icon: SiNumpy, name: "Numpy" },
+          { icon: SiPandas, name: "Pandas" },
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        icons: [
+          { icon: FaFigma, name: "Figma" },
+          { icon: SiAdobexd, name: "Adobe XD" },
+          { icon: SiAdobephotoshop, name: "Photoshop" },
+        ],
       },
     ],
   },
@@ -225,7 +237,8 @@ const About = () => {
                 Contact Me
               </Link>
               <a
-                href="#download"
+                href="/files/Andrew_CV.pdf"
+                download="Andrew_CV.pdf"
                 className="px-6 py-3 border ml-2 border-teal-600/30 text-teal-400 font-medium rounded-lg hover:bg-teal-600/10 transition-all"
               >
                 Download CV
@@ -303,14 +316,13 @@ const About = () => {
                     <div className="flex flex-wrap gap-5 mt-4 lg:gap-6">
                       {" "}
                       {/* Larger gap on large screens */}
-                      {item.icons.map((Icon, i) => (
+                      {item.icons.map(({ icon: Icon, name }, i) => (
                         <div
                           key={i}
                           className="relative group flex flex-col items-center"
                         >
                           <div className="p-3 bg-gray-800/60 rounded-lg border border-gray-700/40 transition-all duration-300 group-hover:border-teal-500/50 group-hover:bg-gray-800/90">
-                            <Icon className="text-2xl text-teal-400 lg:text-3xl" />{" "}
-                            {/* Larger icons on large screens */}
+                            <Icon className="text-2xl text-teal-400 lg:text-3xl" />
                           </div>
                           <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:-bottom-6 px-2 py-1 text-xs font-medium text-white bg-gray-800 rounded transition-all duration-300">
                             {Icon.name.replace("Fa", "").replace("Si", "")}
