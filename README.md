@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 # LulliDev Personal Portfolio
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a Full-Stack Developer. Built using modern web technologies, this portfolio highlights my expertise in AI, Machine Learning, and Software Engineering.
 
 ## 🛠 Tech Stack
 - **Frontend:** Next.js, React, Tailwind CSS
-<<<<<<< HEAD
 - **Backend:** Node.js, Firebase Firestore
 - **Backend:** Node.js
 - **Deployment:** Vercel
@@ -48,7 +46,7 @@ This portfolio is deployed on Vercel. To deploy your own version:
 ## 📬 Contact
 Feel free to reach out!
 - **Email:** johnandrewborabo44@gmail.com
-- **Portfolio:** [Facebook Profile](http://facebook.com)
+- **Portfolio:** [LulliDev](https://lulli-dev.vercel.app)
 - **GitHub:** [lulli30](https://github.com/lulli30)
 
 ---
