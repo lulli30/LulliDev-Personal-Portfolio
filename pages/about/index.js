@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 // icons
 import {
   FaHtml5,
@@ -217,12 +218,11 @@ const About = () => {
               exit="hidden"
               className="md:flex gap-4 mb-2 mt-2 "
             >
-              <a
-                href="/contact"
-                className="px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-teal-500/20 transition-all"
-              >
-                Contact Me
-              </a>
+              <Link href="/contact" passHref>
+                <a className="px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-teal-500/20 transition-all">
+                  Contact Me
+                </a>
+              </Link>
               <a
                 href="#download"
                 className="px-6 py-3 border ml-2 border-teal-600/30 text-teal-400 font-medium rounded-lg hover:bg-teal-600/10 transition-all"
