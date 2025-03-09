@@ -15,7 +15,8 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 - SEO-optimized for better visibility
 
 ## 📸 Screenshots
-(Include images or GIFs of your portfolio in action)
+![image](https://github.com/user-attachments/assets/be2fd49d-6758-4d47-a67d-aa399926c54c)
+
 
 ## 📂 Installation & Setup
 To run this project locally, follow these steps:
