@@ -153,7 +153,7 @@ const About = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="inline-block mb-4 px-3 py-1 bg-teal-900/30 border border-teal-700/20 rounded-full text-teal-400 text-sm font-medium mt-2"
+              className="inline-block mb-4 px-3 py-1 bg-teal-900/30 border border-teal-700/20 rounded-full text-teal-400 text-sm font-medium mt-10"
             >
               Software Developer & AI Specialist
             </motion.div>
@@ -277,7 +277,7 @@ const About = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
               className="py-8 px-6 bg-gradient-to-br from-gray-900/90 to-gray-800/50 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-700/40 h-[450px] overflow-auto 
-             lg:h-[600px] lg:py-10 lg:px-10" // Add size increases for large screens
+             lg:h-[600px] lg:py-10 lg:px-10 mb-10" // Add size increases for large screens
             >
               {aboutData[index].info.map((item, itemIndex) => (
                 <div

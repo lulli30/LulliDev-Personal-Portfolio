@@ -19,7 +19,7 @@ const Work = () => {
         />
         <link rel="icon" href="/favicon1.ico" />
       </Head>
-      <div className="relative min-h-screen bg-gradient-to-b from-gray-950 to-teal-950/30 pt-52 md:pt-62">
+      <div className="relative min-h-screen h-full w-full overflow-hidden bg-gradient-to-b from-gray-950 to-teal-950/30 pt-56 md:pt-64 xl:pt-72 pb-20 md:pb-28 xl:pb-36">
         <Circles />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col xl:flex-row items-center xl:items-start gap-x-16">
@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-center xl:text-left xl:w-[35%] xl:sticky xl:top-24 xl:self-start mb-12 xl:mb-0"
+              className="text-center xl:text-left xl:w-[35%] xl:sticky xl:top-24 xl:self-start mb-12 xl:mb-16"
             >
               <h2 className="text-5xl font-bold mb-2 tracking-tight">
                 My{" "}
@@ -81,7 +81,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="w-full max-w-[300px] sm:max-w-full xl:w-[65%] -mt-16 md:-mt-12 xl:mt-0 mx-auto sm:mx-0"
+              className="w-full max-w-[300px] sm:max-w-full xl:w-[65%] -mt-16 md:-mt-12 xl:mt-0 mx-auto sm:mx-0 mb-12 xl:mb-16"
             >
               <div className="relative overflow-hidden">
                 <div className="bg-gradient-to-r from-gray-900/80 to-teal-900/20 backdrop-blur-sm rounded-2xl p-3 md:p-5 border border-gray-800/50 shadow-xl">
@@ -105,7 +105,7 @@ const Work = () => {
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-teal-900/10 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-teal-900/20 to-transparent"></div>
         <Bulb />
       </div>
 

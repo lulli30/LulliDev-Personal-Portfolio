@@ -65,7 +65,7 @@ const Services = () => {
                 isLargeScreen ? "xl:w-[35%] 2xl:w-[30%]" : "xl:w-[40%]"
               }`}
             >
-              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-primary-100 relative mt-12 xl:mt-4">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-primary-100 relative mt-40 md:mt-40 xl:mt-55">
                 My Services
                 <span className="text-teal-500">.</span>
                 <motion.div
@@ -75,6 +75,7 @@ const Services = () => {
                   transition={{ delay: 0.4, duration: 0.8 }}
                 />
               </h2>
+
               <p className="text-primary-200 text-lg mt-1 xl:mt-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Elevate your business with cutting-edge Websites, AI-powered
                 sleek UI/UX Design, and tailored Software Solutions. I bring
