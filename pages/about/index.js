@@ -95,14 +95,6 @@ const aboutData = [
     title: "certificates",
     info: [
       {
-        title: "Git Started: Introduction to Git & GitHub",
-        stage: "Feb 19, 2025",
-      },
-      {
-        title: "Blockchain Basics: Into the Web3 Space",
-        stage: "Dec 11, 2024",
-      },
-      {
         title: "DICT Programming for Beginners & Intermediate using Python",
         stage: "Nov 22, 2022",
       },

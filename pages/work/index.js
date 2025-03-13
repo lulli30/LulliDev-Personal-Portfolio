@@ -19,7 +19,7 @@ const Work = () => {
         />
         <link rel="icon" href="/favicon1.ico" />
       </Head>
-      <div className="relative min-h-screen h-full w-full overflow-hidden bg-gradient-to-b from-gray-950 to-teal-950/30 pt-56 md:pt-64 xl:pt-72 pb-20 md:pb-28 xl:pb-36">
+      <div className="relative min-h-screen h-full w-full overflow-hidden bg-gradient-to-b from-gray-950 to-teal-950/30 pt-40 md:pt-52 xl:pt-60 pb-20 md:pb-28 xl:pb-36">
         <Circles />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col xl:flex-row items-center xl:items-start gap-x-16">
@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-center xl:text-left xl:w-[35%] xl:sticky xl:top-24 xl:self-start mb-12 xl:mb-16"
+              className="text-center xl:text-left xl:w-[35%] xl:sticky xl:top-12 xl:self-start mb-12 xl:mb-16"
             >
               <h2 className="text-5xl font-bold mb-2 tracking-tight">
                 My{" "}
