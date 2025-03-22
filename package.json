@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
     "nodemailer": "^6.10.0",
