@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 // component
 import Layout from "../components/Layout";
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
       </Layout>
+      <Analytics />
     </>
   );
 }
