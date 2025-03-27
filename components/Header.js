@@ -32,7 +32,7 @@ const Header = () => {
             <Image
               src="/logo1.png"
               alt="Logo"
-              width={140} // Adjusted for larger logo
+              width={140}
               height={60}
               priority={true}
             />

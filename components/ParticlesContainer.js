@@ -3,7 +3,6 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 const ParticlesContainer = React.memo(() => {
-  // Memoize particle initialization to prevent unnecessary re-renders
   const particlesInit = useCallback(async (engine) => {
     try {
       await loadFull(engine);
@@ -12,14 +11,13 @@ const ParticlesContainer = React.memo(() => {
     }
   }, []);
 
-  // Memoize particle configuration to prevent unnecessary re-computations
   const particlesOptions = useMemo(
     () => ({
       fullScreen: { enable: false },
       background: {
         color: { value: "transparent" },
       },
-      fpsLimit: 60, // Reduced from 120 for better performance
+      fpsLimit: 60,
       interactivity: {
         events: {
           onHover: {
@@ -52,18 +50,17 @@ const ParticlesContainer = React.memo(() => {
             enable: true,
             value_area: 800,
           },
-          value: 60, // Slightly reduced number of particles
+          value: 70,
         },
         opacity: { value: 0.5 },
         shape: { type: "circle" },
-        size: { value: 3 }, // Slightly smaller particles
+        size: { value: 3 },
       },
       detectRetina: true,
     }),
     []
-  ); // Empty dependency array ensures this is only computed once
+  );
 
-  // Use a noop function for loaded callback to reduce unnecessary logging
   const particlesLoaded = useCallback(() => {}, []);
 
   return (
