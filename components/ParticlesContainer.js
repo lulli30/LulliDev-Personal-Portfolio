@@ -1,105 +1,84 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-// Particles Container Component
-const ParticlesContainer = () => {
-  // Initialize the particles engine
+const ParticlesContainer = React.memo(() => {
+  // Memoize particle initialization to prevent unnecessary re-renders
   const particlesInit = useCallback(async (engine) => {
-    console.log("Particles engine initialized");
-    await loadFull(engine); // Load the full particles library
+    try {
+      await loadFull(engine);
+    } catch (error) {
+      console.error("Failed to load particles:", error);
+    }
   }, []);
 
-  // Callback when particles are loaded
-  const particlesLoaded = useCallback(() => {
-    console.log("Particles loaded");
-  }, []);
+  // Memoize particle configuration to prevent unnecessary re-computations
+  const particlesOptions = useMemo(
+    () => ({
+      fullScreen: { enable: false },
+      background: {
+        color: { value: "transparent" },
+      },
+      fpsLimit: 60, // Reduced from 120 for better performance
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+        },
+        modes: {
+          repulse: {
+            distance: 150,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: { value: "#014d4e" },
+        links: {
+          color: "#014d4e",
+          distance: 150,
+          enable: true,
+          opacity: 5,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 1,
+        },
+        number: {
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+          value: 60, // Slightly reduced number of particles
+        },
+        opacity: { value: 0.5 },
+        shape: { type: "circle" },
+        size: { value: 3 }, // Slightly smaller particles
+      },
+      detectRetina: true,
+    }),
+    []
+  ); // Empty dependency array ensures this is only computed once
+
+  // Use a noop function for loaded callback to reduce unnecessary logging
+  const particlesLoaded = useCallback(() => {}, []);
 
   return (
-    <div id="particles-container" className="w-full h-full relative">
+    <div className="absolute inset-0 overflow-hidden">
       <Particles
-        className="absolute w-full h-full"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        options={{
-          fullScreen: {
-            // Disable full screen
-          },
-          background: {
-            color: {
-              value: "#0000", // Gray 900 background for visibility
-            },
-          },
-          fpsLimit: 120, // Frame rate limit for better performance
-          interactivity: {
-            events: {
-              onClick: {
-                enable: false, // Disable particle push on click
-                mode: "push",
-              },
-              onHover: {
-                enable: true, // Enable hover effect
-                mode: "repulse",
-              },
-              // Resize particles on window resize
-            },
-            mode: {
-              push: {
-                quantity: 90,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#014d4e", // Dark teal particles color
-            },
-            links: {
-              color: "#014d4e",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true, // Enable particle collision
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 1,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800, // Control the density of particles
-              },
-              value: 80, // Number of particles
-            },
-            opacity: {
-              value: 0.5, // Opacity of particles
-            },
-            shape: {
-              type: "circle", // Particle shape
-            },
-            size: {
-              value: 5, // Size of particles
-            },
-          },
-          detectRetina: true, // Ensure retina display support
-        }}
+        options={particlesOptions}
+        className="w-full h-full"
       />
     </div>
   );
-};
+});
+
+ParticlesContainer.displayName = "ParticlesContainer";
 
 export default ParticlesContainer;
