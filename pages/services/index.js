@@ -69,7 +69,7 @@ const Services = () => {
                 My Services
                 <span className="text-teal-500">.</span>
                 <motion.div
-                  className="absolute -bottom-3 left-0 xl:w-24 h-1 bg-gradient-to-r from-teal-500 to-teal-300 hidden xl:block"
+                  className="absolute -bottom-3 left-0 xl:w-24 h-1 bg-gradient-to-b from-gray-950 to-teal-950/30  hidden xl:block"
                   initial={{ width: 0 }}
                   animate={{ width: "6rem" }}
                   transition={{ delay: 0.4, duration: 0.8 }}
