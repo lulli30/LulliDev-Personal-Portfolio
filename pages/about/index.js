@@ -218,7 +218,7 @@ const MainHeading = () => (
     initial="hidden"
     animate="show"
   >
-    Hi, I'm <span className="text-gradient">Andrew</span>
+    Hi, Im <span className="text-gradient">Andrew</span>
   </motion.h2>
 );
 
