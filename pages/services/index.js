@@ -45,11 +45,13 @@ const Services = () => {
           isLargeScreen ? "overflow-hidden" : ""
         }`}
       >
-        {/* Decorative Circles */}
+        {/* Decorative Elements */}
         <Circles />
+        <div className="absolute inset-0 bg-gradient-to-b from-teal-900/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-teal-900/10 to-transparent" />
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 sm:px- 6">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div
             className={`flex flex-col xl:flex-row gap-8 xl:gap-12 ${
               isLargeScreen ? "items-center" : ""
@@ -65,23 +67,51 @@ const Services = () => {
                 isLargeScreen ? "xl:w-[35%] 2xl:w-[30%]" : "xl:w-[40%]"
               }`}
             >
-              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-primary-100 relative mt-40 md:mt-40 xl:mt-55">
+              <motion.div
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                animate="show"
+                className="inline-block mb-4 px-3 py-1 bg-teal-900/30 border border-teal-700/20 rounded-full text-teal-400 text-sm font-medium"
+              >
+                What I Offer
+              </motion.div>
+
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white relative mt-4">
                 My Services
-                <span className="text-teal-500">.</span>
+                <span className="text-gradient bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text text-transparent">
+                  .
+                </span>
                 <motion.div
-                  className="absolute -bottom-3 left-0 xl:w-24 h-1 bg-gradient-to-b from-gray-950 to-teal-950/30  hidden xl:block"
+                  className="absolute -bottom-3 left-0 xl:w-24 h-1 bg-gradient-to-r from-teal-400 to-teal-500 hidden xl:block"
                   initial={{ width: 0 }}
                   animate={{ width: "6rem" }}
                   transition={{ delay: 0.4, duration: 0.8 }}
                 />
               </h2>
 
-              <p className="text-primary-200 text-lg mt-1 xl:mt-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-gray-300 text-lg mt-6 xl:mt-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Elevate your business with cutting-edge Websites, AI-powered
-                sleek UI/UX Design, and tailored Software Solutions. I bring
-                your ideas to life with modern, scalable, and efficient digital
-                solutions.
+                solutions, and tailored Software Development. I bring your ideas
+                to life with modern, scalable, and efficient digital solutions
+                that drive results.
               </p>
+
+              <motion.div
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                animate="show"
+                className="mt-8 flex flex-wrap gap-4 justify-center xl:justify-start"
+              >
+                <div className="px-4 py-2 bg-teal-900/30 border border-teal-700/20 rounded-lg text-teal-400 text-sm">
+                  Web Development
+                </div>
+                <div className="px-4 py-2 bg-teal-900/30 border border-teal-700/20 rounded-lg text-teal-400 text-sm">
+                  AI Solutions
+                </div>
+                <div className="px-4 py-2 bg-teal-900/30 border border-teal-700/20 rounded-lg text-teal-400 text-sm">
+                  UI/UX Design
+                </div>
+              </motion.div>
             </motion.div>
 
             {/* Slider Section */}

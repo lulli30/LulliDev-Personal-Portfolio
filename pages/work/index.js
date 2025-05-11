@@ -31,6 +31,15 @@ const Work = () => {
               exit="hidden"
               className="text-center xl:text-left xl:w-[35%] xl:sticky xl:top-12 xl:self-start mb-12 xl:mb-16"
             >
+              <motion.div
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                animate="show"
+                className="inline-block mb-4 px-3 py-1 bg-teal-900/30 border border-teal-700/20 rounded-full text-teal-400 text-sm font-medium"
+              >
+                Portfolio
+              </motion.div>
+
               <h2 className="text-5xl font-bold mb-2 tracking-tight">
                 My{" "}
                 <span className="text-gradient bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
@@ -39,8 +48,10 @@ const Work = () => {
               </h2>
 
               <p className="text-gray-300 text-lg mb-10 max-w-[350px] mx-auto xl:mx-0 leading-relaxed">
-                Here are some of my recent projects showcasing my expertise in
-                UI/UX design, web development, and interactive experiences.
+                Explore my portfolio of projects showcasing expertise in web
+                development, AI solutions, and full-stack applications. Each
+                project represents my commitment to creating impactful digital
+                solutions.
               </p>
 
               <div className="hidden xl:block">
@@ -50,7 +61,7 @@ const Work = () => {
                       Expertise
                     </span>
                     <span className="text-gray-300">
-                      AI, Machine Learning, Web Development
+                      Full-Stack Development, AI/ML, Web Applications
                     </span>
                   </div>
 
@@ -59,16 +70,16 @@ const Work = () => {
                       Focus
                     </span>
                     <span className="text-gray-300">
-                      Creating meaningful digital experiences
+                      Building scalable and efficient solutions
                     </span>
                   </div>
 
                   <div className="flex flex-col">
                     <span className="text-teal-400 font-medium text-xl mb-1">
-                      Tools
+                      Tech Stack
                     </span>
                     <span className="text-gray-300">
-                      React, Next.js, TensorFlow, Python
+                      React, Node.js, Python, MySQL, TensorFlow
                     </span>
                   </div>
                 </div>
@@ -89,9 +100,23 @@ const Work = () => {
                     <h3 className="text-sm sm:text-base font-medium text-teal-100">
                       Featured Projects
                     </h3>
-                    <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
-                      Portfolio
-                    </span>
+                    <div className="flex gap-2">
+                      <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
+                        Web Apps
+                      </span>
+                      <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
+                        AI/ML
+                      </span>
+                      <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
+                        Portfolio
+                      </span>
+                      <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
+                        Games
+                      </span>
+                      <span className="px-2 py-1 text-xs font-medium text-teal-300 bg-teal-900/50 rounded-full border border-teal-700/30">
+                        Python
+                      </span>
+                    </div>
                   </div>
 
                   {/* Ensuring No Extra Space */}
