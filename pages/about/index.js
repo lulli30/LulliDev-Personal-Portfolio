@@ -69,6 +69,11 @@ const SKILLS = {
 };
 
 const EXPERIENCE = [
+  {
+    title: "Freelance Web Developer & Software Developer",
+    stage: "2022 - Present",
+  },
+
   { title: "ISEAC 2025 Hackathon - Participant", stage: "Feb 26, 2025" },
 ];
 
@@ -150,23 +155,16 @@ const IconWithTooltip = ({ icon: Icon, name }) => (
   <motion.div
     initial={{ scale: 0.9, opacity: 0.8 }}
     whileInView={{ scale: 1, opacity: 1 }}
-    whileHover={{ y: -5 }}
+    whileHover={{ y: -5, scale: 1.1 }}
     viewport={{ once: true }}
-    className="relative group flex flex-col items-center"
+    className="relative group flex flex-col items-center cursor-pointer"
   >
-    <div className="p-3 bg-gray-800/60 rounded-lg border border-gray-700/40 transition-all duration-300 group-hover:border-teal-500/50 group-hover:bg-gray-800/90">
+    <div className="p-3 bg-gray-800/60 rounded-lg border border-gray-700/40 transition-all duration-300 group-hover:border-teal-500/50 group-hover:bg-gray-800/90 group-hover:shadow-lg group-hover:shadow-teal-500/20">
       <Icon className="text-2xl text-teal-400 lg:text-3xl" />
     </div>
-    <motion.span
-      initial={{ opacity: 0 }}
-      whileHover={{
-        opacity: 1,
-        transition: { delay: 0.2 },
-      }}
-      className="absolute top-full mt-2 px-2 py-1 text-xs font-medium text-white bg-gray-800 rounded transition-all duration-300 whitespace-nowrap shadow-lg border border-gray-700/50"
-    >
+    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 px-3 py-1.5 text-sm font-medium text-white bg-gray-800 rounded-md transition-all duration-300 whitespace-nowrap shadow-lg border border-gray-700/50 z-10 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
       {name}
-    </motion.span>
+    </div>
   </motion.div>
 );
 
