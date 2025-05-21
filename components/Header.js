@@ -32,8 +32,8 @@ const Header = () => {
             <Image
               src="/logo1.png"
               alt="Logo"
-              width={140}
-              height={60}
+              width={100}
+              height={45}
               priority={true}
               style={{ width: "auto", height: "auto" }}
             />
