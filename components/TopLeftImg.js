@@ -9,6 +9,8 @@ const TopLeftImg = () => {
         alt="Top Left Image"
         width={400}
         height={400}
+        priority
+        style={{ width: "auto", height: "auto" }}
       />
     </div>
   );

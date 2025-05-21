@@ -9,6 +9,7 @@ const Avatar = () => {
         alt=""
         width={737}
         height={737}
+        priority
         className="translate-z-0 w-full h-full"
       />
     </div>

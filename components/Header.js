@@ -35,6 +35,7 @@ const Header = () => {
               width={140}
               height={60}
               priority={true}
+              style={{ width: "auto", height: "auto" }}
             />
           </Link>
 
